@@ -401,7 +401,7 @@ NSString *const PFLogInCancelNotification = @"com.parse.ui.login.cancel";
             } else if (error) {
                 [self _loginDidFailWithError:error];
             } else {
-                // User cancelled login.
+                [self cancelLogIn];
             }
         }];
     } else {
