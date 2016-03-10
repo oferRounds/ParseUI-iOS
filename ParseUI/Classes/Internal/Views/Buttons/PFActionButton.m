@@ -82,7 +82,7 @@ static const UIEdgeInsets PFActionButtonContentEdgeInsets = { .top = 0.0f, .left
 - (void)layoutSubviews {
     [super layoutSubviews];
 
-    _activityIndicatorView.center = self.imageView.center;
+    //_activityIndicatorView.center = self.imageView.center;
     self.imageView.alpha = (self.loading ? 0.0f : 1.0f);
 }
 
